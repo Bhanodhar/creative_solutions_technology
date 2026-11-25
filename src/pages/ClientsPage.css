@@ -1,0 +1,79 @@
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.client-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-cobalt);
+}
+
+.client-logo-box {
+  height: 112px;
+  border-radius: var(--radius-md);
+  background: var(--bg-canvas);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.client-monogram {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-sector {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.client-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.client-card p {
+  font-size: 0.93rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 992px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+}

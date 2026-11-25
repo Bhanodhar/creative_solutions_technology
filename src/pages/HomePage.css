@@ -1,0 +1,119 @@
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.blog-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.card-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--brand-cobalt-soft);
+  color: var(--brand-cobalt);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.blog-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.blog-card p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.68;
+}
+
+.services-highlight-band {
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  color: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.services-highlight-band h3 {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: 12px;
+}
+
+.services-highlight-band p {
+  color: #CBD5E1;
+  font-size: 1.02rem;
+}
+
+.marketing-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.marketing-card {
+  background: var(--bg-canvas);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  transition: all var(--transition);
+}
+
+.marketing-card:hover {
+  background: var(--bg-surface);
+  border-color: var(--brand-cobalt);
+  box-shadow: var(--shadow-sm);
+}
+
+.marketing-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.marketing-card p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blogs-grid,
+  .marketing-services-grid,
+  .services-highlight-band {
+    grid-template-columns: 1fr;
+  }
+  .services-highlight-band {
+    padding: 32px 24px;
+  }
+}

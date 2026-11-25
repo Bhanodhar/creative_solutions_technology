@@ -1,0 +1,42 @@
+:root {
+  /* Crisp Daylight Corporate Theme (Theme A) */
+  --bg-canvas: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-navy: #0F172A;
+  --bg-navy-elevated: #1E293B;
+
+  /* Brand & Accents */
+  --brand-primary: #1E3A8A;
+  --brand-cobalt: #2563EB;
+  --brand-cobalt-hover: #1D4ED8;
+  --brand-cyan: #0891B2;
+  --brand-cyan-soft: rgba(8, 145, 178, 0.1);
+  --brand-cobalt-soft: rgba(37, 99, 235, 0.08);
+
+  /* Typography */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-on-dark: #F8FAFC;
+  --text-on-dark-muted: #CBD5E1;
+
+  /* Borders & Elevation */
+  --border-light: #E2E8F0;
+  --border-medium: #CBD5E1;
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 12px 28px -6px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 24px 48px -12px rgba(15, 23, 42, 0.12);
+
+  /* Layout & Type */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --container-max: 1220px;
+  --nav-height: 76px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}

@@ -1,0 +1,133 @@
+.site-footer {
+  background: var(--bg-navy);
+  color: var(--text-on-dark);
+  padding-top: 72px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr 1.25fr;
+  gap: 36px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: var(--text-on-dark-muted);
+  font-size: 0.925rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.footer-links a:hover {
+  color: #38BDF8;
+  transform: translateX(3px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-on-dark-muted);
+  font-size: 0.925rem;
+  margin-bottom: 14px;
+}
+
+.footer-contact-item svg {
+  color: #38BDF8;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.newsletter-text {
+  color: var(--text-on-dark-muted);
+  font-size: 0.925rem;
+  margin-bottom: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 0.925rem;
+}
+
+.newsletter-input::placeholder {
+  color: #94A3B8;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #38BDF8;
+}
+
+.newsletter-status {
+  font-size: 0.85rem;
+  color: #34D399;
+  margin-top: 6px;
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.875rem;
+  color: #94A3B8;
+}
+
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background var(--transition);
+}
+
+.back-to-top:hover {
+  background: var(--brand-cobalt);
+}
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
